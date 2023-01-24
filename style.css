@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+}
+
+.hero-box {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 100px 380px 50px 380px;
+    background-image: url(https://github.com/frontendmentorio/clipboard-landing-page/blob/master/images/bg-header-desktop.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #5D5E60;
+}
+
+.title-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #9AA0A8;
+    padding-bottom: 30px;
+}
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: none;
+    min-width: 170px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: inline-block;
+
+}
+
+.button.first {
+    background-color: #2F9C95;
+    box-shadow: 5px 10px 8px #2f9c952d;
+}
+
+.button.first:hover,
+.button.second:hover {
+    opacity: 0.8;
+}
+
+.button.second {
+    background-color: #5C7AFF;
+    box-shadow: 5px 10px 8px #5c7aff27;
+}
+
+
+
+.mini-box {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 50px 360px 50px 360px;
+}
+
+.mini-box-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #5D5E60;
+}
+
+.mini-box-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #9AA0A8;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.image-wrapper {
+    width: 68%;
+}
+
+.container-image {
+    width: 100%;
+    display: block;  
+}
+
+.image-description {
+    width: 32%;
+    padding-top: 50px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #5D5E60;
+    margin-top: 0;
+}
+
+.image-description p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #9AA0A8;
+}
+
+.image-description .section {
+    padding-bottom: 20px;
+}
+
+.device-image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.devices-image {
+    display: block;
+    width: 60%;
+}
+
+.tools-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 150px;
+}
+
+.tool-item-description {
+    width: calc((100% / 3) - 8%);
+    text-align: center;
+}
+
+.tool-image-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tool-image {
+    display: block;
+    height: 35px;
+}
+
+h3.tool-title {
+    margin-top: 20px;
+}
+
+.tool-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #9AA0A8;
+    padding-left: 20px;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 100px;
+}
+
+.logo-container img {
+    display: block;
+    height: 40px;
+}
+
+.mini-box:nth-last-of-type(1) p.mini-box-description {
+    padding-bottom: 30px;
+}
+
+.mini-box:nth-last-of-type(1) {
+    margin-bottom: 100px;
+}
+
+.footer-container {
+    background-color: #d0d7df48;
+    display: flex;
+    width: 100%;
+}
+
+.footer-logo-wrapper {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    display: block;
+    height: 55px;
+}
+
+.footer-menu-list-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    width: calc(100% / 3);
+    padding-bottom: 20px;
+}
+
+.footer-menu-item {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #5D5E60;
+}
+
+
+.social-media-wrapper {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+li.social-media-item {
+    padding-right: 15px;
+}
