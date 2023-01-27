@@ -73,6 +73,7 @@ body {
     border-radius: 30px;
     padding: 15px 25px;
     display: inline-block;
+    cursor: pointer;
 
 }
 
