@@ -11,6 +11,7 @@ body {
     max-width: 1300px;
     margin-right: auto;
     margin-left: auto;
+    padding: 0 30px;
 }
 
 .hero-box-wrapper {
@@ -35,7 +36,7 @@ body {
 .container .mini-box-wrapper .mini-box,
 .container .clipboard-section-wrapper .clipboard-section
  {
-    max-width: 671px;
+    max-width: 724px;
 }
 
 .hero-box-wrapper .hero-box .logo-wrapper .logo {
@@ -48,6 +49,7 @@ body {
     font-size: 40px;
     color: #5D5E60;
     margin: 0 0 20px;
+    text-align: center;
 }
 
 .hero-box-wrapper .hero-box .page-title-wrapper .title-description {
@@ -94,6 +96,7 @@ body {
 
 .container .mini-box-wrapper {
     margin-bottom: 80px;
+    text-align: center;
 }
 
 .container .mini-box-wrapper .mini-box .mini-box-title,
@@ -101,6 +104,7 @@ body {
     font-size: 30px;
     color: #5D5E60;
     margin: 0 0 20px;
+    text-align: center;
 }
 
 .container .mini-box-wrapper .mini-box .mini-box-description,
@@ -114,17 +118,17 @@ body {
 .big-box {
     width: 85%;
     display: flex;
-    gap: 100px;
+    gap: 70px;
     margin-bottom: 200px;
 }
 
 .big-box .image-wrapper {
-    width: 60%;
+    width: 80%;
     position: relative;
 }
 
 .big-box .image-wrapper .big-box-image {
-    width: 700px;
+    width: 100%;
     display: block;
     position: absolute; 
     left: -50px; 
@@ -149,10 +153,6 @@ body {
     color: #9AA0A8;
     margin: 0;
 }
-
-/* .image-description .section {
-    padding-bottom: 20px;
-} */
 
 .device-image-wrapper {
     display: flex;
@@ -201,8 +201,9 @@ body {
 .logo-section {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 85px;
+    gap: 50px 85px;
     margin-bottom: 150px;
 }
 
@@ -255,14 +256,8 @@ body {
 .footer-wrapper .footer .footer-menu-list-wrapper .footer-menu-list .footer-menu-item,
 .footer-wrapper .footer .social-media-wrapper .social-media-list .social-media-item {
     list-style-type: none;
-    display: inline;
     width: calc(100% / 3);
 }
-
-/* .footer-wrapper .footer .footer-menu-list-wrapper .footer-menu-list .footer-menu-item {
-    font-size: 18px;
-    color: #5D5E60;
-} */
 
 .footer-wrapper .footer .footer-menu-list-wrapper .footer-menu-list .footer-menu-item .footer-menu-item-link {
     text-decoration: none;
@@ -270,9 +265,99 @@ body {
     color: #5D5E60;
 }
 
+.footer-wrapper .footer .footer-menu-list-wrapper .footer-menu-list .footer-menu-item .footer-menu-item-link:hover {
+    color: #27B69F;
+}
+
+.footer-wrapper .footer .social-media-wrapper .social-media-list .social-media-item path:hover {
+    fill: #27B69F;
+}
 
 .footer-wrapper .footer .social-media-wrapper .social-media-list {
-    display: flex;
-    column-gap: 15px;
-    align-items: center;   
+    display: grid;
+    grid-template-columns: repeat(3, 24px);    
+    column-gap: 20px;
+}
+
+@media (max-width: 1156px) {
+    .big-box .image-wrapper .big-box-image {
+        position: static;
+    }
+
+    .big-box .image-description {
+        padding: 15px 0 50px;
+    }
+}
+
+@media (max-width: 1041px) {
+    .main-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .big-box {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .big-box .image-description {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 653px) {
+    .hero-box-wrapper .hero-box .logo-wrapper .logo {
+        width: 100px;
+        margin: 100px 0 50px;
+    }
+
+    .hero-box-wrapper .hero-box .page-title-wrapper .title {
+        font-size: 28px;
+    }
+
+    .container .mini-box-wrapper .mini-box .mini-box-title, .container .clipboard-section-wrapper .clipboard-section .clipboard-section-title {
+        font-size: 24px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .footer-wrapper .footer .footer-menu-list-wrapper .footer-menu-list {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-wrapper .footer .footer-menu-list-wrapper .footer-menu-list .footer-menu-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 491px) {
+    .buttons-wrapper {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .tools-items-list {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .tools-items-list .tool-item {
+        width: 100%;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
 }
