@@ -273,8 +273,14 @@ body {
     fill: #27B69F;
 }
 
+.footer-wrapper .footer .social-media-wrapper .social-media-list .social-media-item svg.social-media-icon {
+    width: 24px;
+}
+
+
 .footer-wrapper .footer .social-media-wrapper .social-media-list {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(3, 24px);    
     column-gap: 20px;
 }
